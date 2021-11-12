@@ -1,9 +1,11 @@
 *{
     box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
 }
 html, body{
     margin: 0;
     height: 100%;
+    background-color: thistle;
 }
 #nav{
     display: flex;
@@ -16,15 +18,24 @@ a{
 a:hover{
     text-decoration: underline;
 }
-#nav a{
+button{
+    text-decoration: none;
+    cursor:pointer;
+    width: 72px;
+    height: 28px;
+    background-color: blue;
+    color: whitesmoke;
+    border-radius: 10%; 
+
+    
+}
+button:hover{
+    text-decoration:underline;
+}
+#nav a,i,button{
     margin-right: 20px;
 }
-#nav a.topimage{
-    width: 20px;
-    height: 20px;
-    background-color: red;
-    border-radius: 50%;
-}
+
 #middle{
     flex-grow: 1;
     display: flex;
@@ -53,16 +64,16 @@ a:hover{
     left: 10px;
 }
 #voice{
-    right: 10px;
+    right: 0px;
 }
 #searchbar{
     padding-top: 10px;
     padding-bottom: 10px;
     outline: 0;
-    width: 500px;
+    width: 440px;
     padding-left: 30px;
     padding-right: 30px;
-    border-radius: 14px;
+    border-radius: 20px;
     border: 1px solid #c4c4c4;
 }
 #searchbar:hover{
@@ -83,8 +94,9 @@ a:hover{
     border: 2px solid transparent;
 }
 #links{
-    margin-top: 10px;
+    margin-top: 30px;
     text-align: center;
+    padding-right: 10px;
 }
 body{
     display: flex;
@@ -94,7 +106,28 @@ body{
     box-shadow: 0 0 2px 1px black ;
     border: 2px solid #eee;
 }
-#footer-content{
-    background: #eee;
-    border-top: 1px solid black;
+footer h4{
+    color:#640b07;
+    font-size: 20px;
+    line-height: 28.5px;    
+    padding-left: 29px;
+    border: 1px solid black;
+
+}
+footer a{
+    color: rgb(59, 73, 177);
+    display: inline-block;
+    padding: 12px 11.3px;
+    font-size: 14px;
+}
+.links{
+    border-top: 0px transparent black;
+    display: flex;
+}
+.link1{
+    padding: left 18.7px;
+    flex:1;
+}
+.link2{
+    padding-right: 18.7px;
 }
